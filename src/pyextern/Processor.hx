@@ -4,7 +4,7 @@ import Type as StdType;
 import haxe.ds.*;
 import haxe.macro.*;
 import haxe.macro.Expr;
-import haxe.xml.Fast;
+import haxe.xml.Access;
 import python.Tuple;
 import python.lib.Builtins.*;
 import inspect.*;
@@ -48,8 +48,8 @@ class Processor {
 		var xml = parseRst(doc);
 		if (xml != null) {
 			var sec =
-				new Fast(xml).node.document.nodes.section
-					.find(function(sec:Fast) return 
+				new Access(xml).node.document.nodes.section
+					.find(function(sec:Access) return 
 						sec.hasNode.title && 
 						sec.node.title.innerHTML.toLowerCase() == "returns"
 					);
@@ -364,7 +364,9 @@ class Processor {
 			} else { // is a module member but is not a mobule/class
 				var td = main.getTd(moduleName, "");
 
-				if (!re_ident.match(memName)) throw memName;
+				if (!re_ident.match(memName)) {
+					throw memName;
+				}
 
 				if (isMethod(memObj)) {
 					var sig = try {
