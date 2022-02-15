@@ -1,0 +1,233 @@
+/* This file is generated, do not edit! */
+package spacy.pipeline._parser_internals.arc_eager;
+@:pythonImport("spacy.pipeline._parser_internals.arc_eager", "ArcEager") extern class ArcEager {
+	public function __class__(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		Implement delattr(self, name).
+	**/
+	public function __delattr__(name:Dynamic):Dynamic;
+	/**
+		Default dir() implementation.
+	**/
+	public function __dir__():Dynamic;
+	static public var __doc__ : Dynamic;
+	/**
+		Return self==value.
+	**/
+	public function __eq__(value:Dynamic):Dynamic;
+	/**
+		Default object formatter.
+	**/
+	public function __format__(format_spec:Dynamic):Dynamic;
+	/**
+		Return self>=value.
+	**/
+	public function __ge__(value:Dynamic):Dynamic;
+	/**
+		Return getattr(self, name).
+	**/
+	public function __getattribute__(name:Dynamic):Dynamic;
+	/**
+		Return self>value.
+	**/
+	public function __gt__(value:Dynamic):Dynamic;
+	/**
+		Return hash(self).
+	**/
+	public function __hash__():Dynamic;
+	/**
+		Initialize self.  See help(type(self)) for accurate signature.
+	**/
+	@:native("__init__")
+	public function ___init__(?args:python.VarArgs<Dynamic>, ?kwargs:python.KwArgs<Dynamic>):Dynamic;
+	/**
+		Initialize self.  See help(type(self)) for accurate signature.
+	**/
+	public function new(?args:python.VarArgs<Dynamic>, ?kwargs:python.KwArgs<Dynamic>):Void;
+	/**
+		This method is called when a class is subclassed.
+		
+		The default implementation does nothing. It may be
+		overridden to extend subclasses.
+	**/
+	public function __init_subclass__(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		Return self<=value.
+	**/
+	public function __le__(value:Dynamic):Dynamic;
+	/**
+		Return self<value.
+	**/
+	public function __lt__(value:Dynamic):Dynamic;
+	/**
+		Return self!=value.
+	**/
+	public function __ne__(value:Dynamic):Dynamic;
+	/**
+		Create and return a new object.  See help(type) for accurate signature.
+	**/
+	static public function __new__(?args:python.VarArgs<Dynamic>, ?kwargs:python.KwArgs<Dynamic>):Dynamic;
+	static public var __pyx_vtable__ : Dynamic;
+	/**
+		TransitionSystem.__reduce__(self)
+	**/
+	public function __reduce__(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		ArcEager.__reduce_cython__(self)
+	**/
+	public function __reduce_cython__(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		Helper for pickle.
+	**/
+	public function __reduce_ex__(protocol:Dynamic):Dynamic;
+	/**
+		Return repr(self).
+	**/
+	public function __repr__():Dynamic;
+	/**
+		Implement setattr(self, name, value).
+	**/
+	public function __setattr__(name:Dynamic, value:Dynamic):Dynamic;
+	/**
+		ArcEager.__setstate_cython__(self, __pyx_state)
+	**/
+	public function __setstate_cython__(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		Size of object in memory, in bytes.
+	**/
+	public function __sizeof__():Dynamic;
+	/**
+		Return str(self).
+	**/
+	public function __str__():Dynamic;
+	/**
+		Abstract classes can override this to customize issubclass().
+		
+		This is invoked early on by abc.ABCMeta.__subclasscheck__().
+		It should return True, False or NotImplemented.  If it returns
+		NotImplemented, the normal algorithm is used.  Otherwise, it
+		overrides the normal algorithm (and the outcome is cached).
+	**/
+	public function __subclasshook__(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		ArcEager._replace_unseen_labels(self, ArcEagerGold gold)
+	**/
+	public function _replace_unseen_labels(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	public var action_types : Dynamic;
+	/**
+		TransitionSystem.add_action(self, int action, label_name)
+	**/
+	public function add_action(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		TransitionSystem.apply_transition(self, StateClass state, name)
+	**/
+	public function apply_transition(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	public var builtin_labels : Dynamic;
+	/**
+		cfg: object
+	**/
+	public var cfg : Dynamic;
+	/**
+		ArcEager.class_name(self, int i)
+	**/
+	public function class_name(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		freqs: object
+	**/
+	public var freqs : Dynamic;
+	/**
+		TransitionSystem.from_bytes(self, bytes_data, exclude=tuple())
+	**/
+	public function from_bytes(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		TransitionSystem.from_disk(self, path, **kwargs)
+	**/
+	public function from_disk(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		ArcEager.get_actions(type cls, **kwargs)
+	**/
+	public function get_actions(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		ArcEager.get_beam_parses(self, Beam beam)
+	**/
+	public function get_beam_parses(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		TransitionSystem.get_class_name(self, int clas)
+	**/
+	public function get_class_name(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		ArcEager.get_cost(self, StateClass stcls, gold, int i)
+	**/
+	public function get_cost(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		ArcEager.get_doc_labels(self, doc)
+		Get the labels required for a given Doc.
+	**/
+	public function get_doc_labels(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		TransitionSystem.get_oracle_sequence(self, Example example, _debug=False)
+	**/
+	public function get_oracle_sequence(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		ArcEager.get_oracle_sequence_from_state(self, StateClass state, ArcEagerGold gold, _debug=None)
+	**/
+	public function get_oracle_sequence_from_state(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		ArcEager.has_gold(self, Example eg, start=0, end=None)
+	**/
+	public function has_gold(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		TransitionSystem.init_batch(self, docs)
+	**/
+	public function init_batch(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		ArcEager.init_gold(self, StateClass state, Example example)
+	**/
+	public function init_gold(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		ArcEager.init_gold_batch(self, examples)
+	**/
+	public function init_gold_batch(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		TransitionSystem.initialize_actions(self, labels_by_action, min_freq=None)
+	**/
+	public function initialize_actions(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		ArcEager.is_gold_parse(self, StateClass state, ArcEagerGold gold)
+	**/
+	public function is_gold_parse(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		TransitionSystem.is_valid(self, StateClass stcls, move_name)
+	**/
+	public function is_valid(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		labels: object
+	**/
+	public var labels : Dynamic;
+	/**
+		ArcEager.move_name(self, int move, attr_t label)
+	**/
+	public function move_name(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	public var n_moves : Dynamic;
+	public var neg_key : Dynamic;
+	/**
+		root_label: 'attr_t'
+	**/
+	public var root_label : Dynamic;
+	/**
+		ArcEager.set_annotations(self, StateClass state, Doc doc)
+	**/
+	public function set_annotations(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		TransitionSystem.to_bytes(self, exclude=tuple())
+	**/
+	public function to_bytes(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		TransitionSystem.to_disk(self, path, **kwargs)
+	**/
+	public function to_disk(args:haxe.extern.Rest<Dynamic>):Dynamic;
+	/**
+		ArcEager.transition(self, StateClass state, action)
+	**/
+	public function transition(args:haxe.extern.Rest<Dynamic>):Dynamic;
+}
