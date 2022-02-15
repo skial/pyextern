@@ -1,0 +1,2 @@
+-cp .haxelib/tink_core/2,0,2/src
+-D tink_core=2.0.2

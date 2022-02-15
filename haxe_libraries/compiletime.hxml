@@ -1,0 +1,2 @@
+-D compiletime=2.8.0
+-cp .haxelib/compiletime/2,8,0/src

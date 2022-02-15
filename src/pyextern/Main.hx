@@ -219,7 +219,7 @@ class Main {
 	static public var re_ident = ~/^[A-Za-z_][A-Za-z0-9_]*$/;
 	static public var re_type = ~/^[A-Z_][A-Za-z0-9_]*$/;
 	static public function isHxKeyword(name:String):Bool {
-		// https://github.com/HaxeFoundation/haxe/blob/development/lexer.mll
+		// https://github.com/HaxeFoundation/haxe/blob/development/src/syntax/lexer.ml
 		return [
 			"function","class","static","var","if","else","while","do","for",
 			"break","return","continue","extends","implements","import",
